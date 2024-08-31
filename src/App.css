@@ -1,0 +1,273 @@
+:root {
+	--cizgi-genislik: 15px;
+	--cizgi-yukseklik: 50px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.filter {
+	color: red;
+}
+
+#root {
+	width: 100%;
+}
+
+#addButton {
+	width: 100%;
+}
+
+.container {
+	width: 100%;
+	margin-top: 5%;
+	border-radius: 50px;
+	padding: 20px;
+}
+
+.header {
+	width: 100%;
+}
+
+.index-add {
+	max-width: 50px;
+	min-height: 50px;
+}
+
+.modal-content {
+	padding: 15px;
+	margin: 15px;
+}
+
+.modal-dialog {
+	display: flex;
+	justify-content: center;
+}
+
+.fa-circle-left {
+	font-size: 30px;
+	color: rgb(0, 0, 0);
+}
+
+.title {
+	width: 100%;
+	text-decoration: none;
+	color: black;
+}
+
+.task-title {
+	width: 100%;
+	text-decoration: none;
+	color: black;
+}
+
+.reflesh-icon {
+	width: 34px;
+	color: white;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	max-width: 30px;
+	max-height: 30px;
+}
+
+.delete-icon {
+	width: 34px;
+	color: white;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	max-width: 30px;
+	max-height: 30px;
+}
+
+.swal2-popup {
+	margin: 20px;
+}
+
+.swal2-container {
+	padding: 20px;
+}
+
+.task {
+	text-decoration: none;
+	color: black;
+	border-radius: 15px;
+	margin: 8px 0;
+	background: #FFFFFF;
+
+}
+
+.subtask.completed {
+    text-decoration: line-through;
+    color: #6c757d; /* Daha soluk bir renk */
+}
+
+.task.completed {
+	opacity: 0.3;
+	text-decoration: line-through;
+}
+
+.taskInfo{
+	text-decoration: none;
+}
+
+.task .box .taskİnfo .description {
+	color: grey;
+}
+
+.todolist-description {
+	color: grey;
+}
+
+.task-description {
+	color: grey;
+}
+
+.confirmButton {
+	width: 62px;
+}
+
+.task .box .taskİnfo {
+	text-decoration: none;
+}
+
+.sortButton {
+	display: flex;
+	align-items: center;
+}
+
+.sortButton input {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 170px;
+	height: 40px;
+}
+
+.actions .dropdown .btn {
+	background-color: rgb(231 231 231 / 61%);
+	color: rgb(12, 12, 12);
+	border: none;
+	width: 100%;
+	/*max-width: 170px;*/
+	height: 38px;
+}
+
+.cizgi {
+	width: var(--cizgi-genislik);
+	height: var(--cizgi-yukseklik);
+	border-radius: 10px 0px 0px 10px;
+	background-color: var(--cizgi-renk);
+}
+
+.cizgi-important {
+	--cizgi-renk: red;
+}
+
+.cizgi-default {
+	--cizgi-renk: blue;
+}
+
+.cizgi-warning {
+	--cizgi-renk: darkorange;
+}
+
+.icon .reflesh-icon {
+	border-radius: 5px;
+	background-color: darkorange;
+	border-radius: 15px;
+	transform: scale(0.8);
+
+}
+
+.icon .delete-icon {
+	background-color: red;
+	border-radius: 15px;
+	transform: scale(0.8);
+}
+
+
+/* Login.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+.login-form {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-form h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.error-message {
+    color: #d9534f;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.login-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+
+@media only screen and (max-width: 425px) {
+	.dropdown {
+		width: 100%;
+	}
+
+	.sortButton {
+		min-width: 100%;
+
+	}
+
+	.task .box {
+		overflow: auto;
+	}
+}
